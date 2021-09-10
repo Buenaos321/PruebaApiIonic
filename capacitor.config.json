@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "PruebaIonic",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
