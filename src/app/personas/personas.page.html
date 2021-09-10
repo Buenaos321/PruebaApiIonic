@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Personas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-row >
+      <ion-col size="3">#</ion-col>
+      <ion-col size="3">Nombre</ion-col>
+      <ion-col size="3">Idea</ion-col>
+      <ion-col size="3">Documento</ion-col>
+    </ion-row>
+    <ion-card *ngFor="let personas of personas$|async">
+        <ion-row>
+          <ion-col size="3">{{personas.id}}</ion-col>
+          <ion-col size="3">{{personas.nombre}}</ion-col>
+          <ion-col size="3">{{personas.idea}}</ion-col>
+          <ion-col size="3">{{personas.documento}}</ion-col>
+        </ion-row>
+    </ion-card>
+  </ion-list>
+</ion-content>
