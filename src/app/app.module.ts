@@ -1,3 +1,4 @@
+import { PersonasPage } from './personas/personas.page';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
@@ -10,7 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { from } from 'rxjs';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, PersonasPage],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
