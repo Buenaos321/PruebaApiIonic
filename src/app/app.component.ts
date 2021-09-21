@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   constructor(private http: HttpClient) {
-    http.get('http://localhost:8000/api/personas').subscribe(console.log);
+    http.get('http://localhost:8000/api/personas').subscribe();//.subscribe(console.log)
   }
 }
